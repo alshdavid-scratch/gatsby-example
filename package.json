@@ -12,13 +12,27 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "postinstall": "node postinstall.cjs"
   },
   "dependencies": {
     "@parcel/config-default": "^2.10.3",
+    "@parcel/core": "^2.10.3",
     "gatsby": "^5.12.11",
     "parcel": "^2.10.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@parcel/bundler-default": "2.10.3",
+    "@parcel/compressor-raw": "2.10.3",
+    "@parcel/namer-default": "2.10.3",
+    "@parcel/optimizer-terser": "2.10.3",
+    "@parcel/packager-js": "2.10.3",
+    "@parcel/packager-raw": "2.10.3",
+    "@parcel/reporter-dev-server": "2.10.3",
+    "@parcel/resolver-default": "2.10.3",
+    "@parcel/runtime-js": "2.10.3",
+    "@parcel/transformer-js": "2.10.3",
+    "@parcel/transformer-json": "2.10.3",
+    "@parcel/plugin": "2.10.3"
   }
 }

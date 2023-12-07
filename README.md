@@ -1,49 +1,73 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+Minimal reproduction of Parcel Gatsby issue
 
-## 🚀 Quick start
+```
+npm install
+npm run develop
+```
 
-1.  **Create a Gatsby site.**
+Will result in
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+```
+$ npm run develop
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+> my-gatsby-site@1.0.0 develop
+> gatsby develop
 
-2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+ ERROR  UNKNOWN
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+[ThrowableDiagnostic [Error]: The plugin "@parcel/reporter-dev-server" is not compatible with the current version of Parcel. Requires "^2.10.3"
+but the current version is "2.8.3".] {
+  diagnostics: [
+    {
+      message: 'The plugin "@parcel/reporter-dev-server" is not compatible with the current version of Parcel. Requires "^2.10.3" but the current
+version is "2.8.3".',
+      origin: '@parcel/core',
+      codeFrames: [Array]
+    }
+  ]
+}
 
-3.  **Open the code and start customizing!**
 
-    Your site is now running at http://localhost:8000!
+ ERROR  UNKNOWN
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+[ThrowableDiagnostic [Error]: The plugin "@parcel/reporter-dev-server" is not compatible with the current version of Parcel. Requires "^2.10.3"
+but the current version is "2.8.3".] {
+  diagnostics: [
+    {
+      message: 'The plugin "@parcel/reporter-dev-server" is not compatible with the current version of Parcel. Requires "^2.10.3" but the current
+version is "2.8.3".',
+      origin: '@parcel/core',
+      codeFrames: [Array]
+    }
+  ]
+}
 
-4.  **Learn more**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+ ERROR  UNKNOWN
 
-## 🚀 Quick start (Netlify)
+[ThrowableDiagnostic [Error]: The plugin "@parcel/reporter-dev-server" is not compatible with the current version of Parcel. Requires "^2.10.3"
+but the current version is "2.8.3".] {
+  diagnostics: [
+    {
+      message: 'The plugin "@parcel/reporter-dev-server" is not compatible with the current version of Parcel. Requires "^2.10.3" but the current
+version is "2.8.3".',
+      origin: '@parcel/core',
+      codeFrames: [Array]
+    }
+  ]
+}
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+ ERROR #11901  API.TYPESCRIPT.COMPILATION
+
+Failed to compile Gatsby files (@parcel/core):
+
+The plugin "@parcel/bundler-default" is not compatible with the current version of Parcel. Requires "^2.10.3" but the current version is "2.8.3"..
+
+
+File path:
+/home/dalsh/Development/alshdavid/foo/my-gatsby-site/node_modules/@parcel/config-default/node_modules/@parcel/bundler-default/package.json
+
+not finished compile gatsby files - 0.284s
+```
